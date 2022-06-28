@@ -1,13 +1,20 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
 //import Dropdown from '../utils/Dropdown';
-
+import AOS from 'aos';
 function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
 
   const trigger = useRef(null);
   const mobileNav = useRef(null);
-
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      disable: 'phone',
+      duration: 600,
+      easing: 'ease-out-sine',
+    });
+  });
   // close the mobile menu on click outside
   useEffect(() => {
     const clickHandler = ({ target }) => {
