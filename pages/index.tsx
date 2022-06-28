@@ -1,7 +1,6 @@
 import React, { useEffect } from 'react';
 import type { NextPage } from 'next';
 
-import Head from 'next/head';
 import Image from 'next/image';
 import Header from '../components/Header';
 import PageIllustration from '../components/PageIllustration';
@@ -13,11 +12,11 @@ import Target from '../components/Target';
 import News from '../components/News';
 import Newsletter from '../components/Newsletter';
 import Footer from '../components/Footer';
+
 const Home: NextPage = () => {
   return (
     <>
       <main className="grow">
-        {/*  Page illustration */}
         <div
           className="relative max-w-6xl mx-auto h-0 pointer-events-none"
           aria-hidden="true">
@@ -36,5 +35,5 @@ const Home: NextPage = () => {
     </>
   );
 };
-
+Home.title = 'Homepage';
 export default Home;

@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Modal from './utils/Modal';
 import Image from 'next/image';
+
 import HeroImage from '../public/static/images/hero-image-01.jpg';
 
 function HeroHome() {

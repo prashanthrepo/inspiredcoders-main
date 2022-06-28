@@ -10,8 +10,8 @@ function HeroAbout() {
         <Image
           className="w-full h-full object-cover"
           src={HeroImage}
-          width="1440"
-          height="394"
+          width=""
+          height="700"
           alt="About"
         />
         <div
