@@ -154,5 +154,4 @@ function Contact() {
     </main>
   );
 }
-Contact.title = 'Contact';
 export default Contact;

@@ -31,5 +31,4 @@ function About() {
     </main>
   );
 }
-About.title = 'About';
 export default About;

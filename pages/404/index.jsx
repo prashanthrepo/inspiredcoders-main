@@ -64,5 +64,4 @@ function NotFound() {
     </main>
   );
 }
-NotFound.title = 'NotFound';
 export default NotFound;

@@ -15,5 +15,4 @@ function Blog() {
     </main>
   );
 }
-Blog.title = 'Blog';
 export default Blog;

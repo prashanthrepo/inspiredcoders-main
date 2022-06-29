@@ -31,5 +31,4 @@ const Home: NextPage = () => {
     </>
   );
 };
-Home.title = 'Homepage';
 export default Home;
