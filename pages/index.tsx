@@ -1,8 +1,5 @@
 import React, { useEffect } from 'react';
 import type { NextPage } from 'next';
-
-import Image from 'next/image';
-import Header from '../components/Header';
 import PageIllustration from '../components/PageIllustration';
 import HeroHome from '../components/HeroHome';
 import Process from '../components/Process';
@@ -11,7 +8,6 @@ import Tabs from '../components/Tabs';
 import Target from '../components/Target';
 import News from '../components/News';
 import Newsletter from '../components/Newsletter';
-import Footer from '../components/Footer';
 
 const Home: NextPage = () => {
   return (

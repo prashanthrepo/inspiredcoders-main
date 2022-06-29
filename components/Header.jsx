@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from 'react';
 import Link from 'next/link';
-//import Dropdown from '../utils/Dropdown';
+import Dropdown from './utils/Dropdown';
 import AOS from 'aos';
 function Header() {
   const [mobileNavOpen, setMobileNavOpen] = useState(false);
@@ -73,17 +73,7 @@ function Header() {
                   </a>
                 </Link>
               </li>
-              <li>
-                <Link href="/pricing">
-                  <a
-                    href=""
-                    className="text-gray-300 hover:text-gray-200 px-4 py-2 flex
-                  items-center transition duration-150 ease-in-out">
-                    {' '}
-                    Pricing
-                  </a>
-                </Link>
-              </li>
+
               <li>
                 <Link href="/blog">
                   <a
@@ -96,37 +86,58 @@ function Header() {
                 </Link>
               </li>
               <li>
-                <Link href="/about">
+                <Link href="/contact">
                   <a
                     href=""
                     className="text-gray-300 hover:text-gray-200 px-4 py-2 flex
                   items-center transition duration-150 ease-in-out">
                     {' '}
-                    About us
+                    Contact
                   </a>
                 </Link>
               </li>
-              {/* 1st level: hover */}
+              <li>
+                <Link href="/about">
+                  <a
+                    href=""
+                    className="text-gray-300 hover:text-gray-200 px-4 py-2 flex
+                  items-center transition duration-150 ease-in-out">
+                    About
+                  </a>
+                </Link>
+              </li>
               {/* <Dropdown title="Support">
                 <li>
-                  <Link
-                    href="/contact">
-                    className="font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight">
-                    Contact us
+                  <Link href="/contact">
+                    <a
+                      href="/contact"
+                      className="font-medium text-sm text-gray-400
+                    hover:text-purple-600 flex py-2 px-4 leading-tight">
+                      Contact{' '}
+                    </a>
+                    us
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/help">
-                    className="font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight">
-                    Help center
+                  <Link href="/help">
+                    <a
+                      href="/help"
+                      className="font-medium text-sm text-gray-400
+                    hover:text-purple-600 flex py-2 px-4 leading-tight">
+                      Help{' '}
+                    </a>
+                    center
                   </Link>
                 </li>
                 <li>
-                  <Link
-                    href="/404">
-                    className="font-medium text-sm text-gray-400 hover:text-purple-600 flex py-2 px-4 leading-tight">
-                    404
+                  <Link href="/404">
+                    <a
+                      href="/404"
+                      className="font-medium text-sm text-gray-400
+                    hover:text-purple-600 flex py-2 px-4 leading-tight">
+                      {' '}
+                      404{' '}
+                    </a>
                   </Link>
                 </li>
               </Dropdown> */}
