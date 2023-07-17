@@ -1,5 +1,6 @@
 {
   "private": true,
+  "homepage" : "https://inspiredcoders.com/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
